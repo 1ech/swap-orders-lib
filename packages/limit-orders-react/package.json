@@ -23,13 +23,13 @@
   "author": "Gelato Network",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
-  "browser": "dist/index.umd.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "scripts": {
-    "build": "npx rollup -c",
+    "build": "tsc --declaration --outDir dist",
     "copy-contracts-types": "cp ./src/contracts/types/*.d.ts ./dist/src/contracts/types",
     "copy-assets": "cp ./src/react/assets/**/*.png ./dist/src/react/assets",
     "format": "prettier --write .",

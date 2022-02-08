@@ -66,6 +66,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { GelatoProvider } from "@gelatonetwork/limit-orders-react";
 import { useActiveWeb3React } from "hooks/web3";
+import "@reach/dialog/styles.css";
 
 function Gelato({ children }: { children?: React.ReactNode }) {
   const { library, chainId, account } = useActiveWeb3React();
